@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Banco de Sangre ISSS</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/gobierno.ico" />
+  </head>
+
+  <div class="posicion">
+    <header>
+      <center>
+        <img src="img/seguro social.jpg" />
+        <h1><p style="font-size: 45px">Banco de Sangre ISSS</p></h1>
+      </center>
+    </header>
+  </div>
+
+  <br />
+  
+  <body>
+    <style>
+      body {
+            background-image: url("img/fondo.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+      }
+    </style>
+    <div class="container">
+      <center>
+      <h2>Formulario de Donante de Sangre</h2>
+      <form action="#" method="post">
+  
+        <h2>Agregue sus detalles</h2>
+      </center>
+        <label for="nombre">Nombre completo del Donante:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo: Ana García">
+  
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="Ejemplo: ana24@example.com">
+        <center>
+        <h2>Proporcionar información adicional</h2>
+        </center>
+        <label for="dui_donante">Número de DUI del Donante:</label>
+        <input type="text" id="dui_donante" name="dui_donante" required placeholder="Ejemplo: 87654321-0">
+  
+        <label>Sexo del Donante:</label>
+        <select id="controls">
+          <option value selected>Seleccione una opción</option>
+          slot
+          <option value="Femenino">Femenino</option>
+          slot
+          <option value="Masculino">Masculino</option>
+          slot
+        </select>
+        <br>
+        <br>
+        <br>
+  
+        <label for="ocupacion_donante">Ocupación del Donante:</label>
+        <input type="text" id="ocupacion_donante" name="ocupacion_donante" placeholder="Ejemplo: Estudiante">
+  
+        <label for="telefono_donante">Teléfono de contacto del Donante:</label>
+        <input type="text" id="telefono_donante" name="telefono_donante" required placeholder="Ejemplo: 4563-4539">
+  
+        <label for="nombre_paciente">Nombre completo del Paciente:</label>
+        <input type="text" id="nombre_paciente" name="nombre_paciente" required placeholder="Ejemplo: Mateo Hernandez">
+  
+        <label for="dui_paciente">Número de Afiliación o DUI del Paciente:</label>
+        <input type="text" id="dui_paciente" name="dui_paciente" required placeholder="Ejemplo: 87654321-0">
+  
+        <label for="mayor_edad">¿Es mayor de edad?</label>
+        <select id="mayor_edad" name="mayor_edad" required>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+        <br>
+        <br>
+        <br>
+  
+        <label for="dia_nacimiento">Fecha de nacimiento del Donante:</label>
+        <input type="date" id="dia_nacimiento" name="dia_nacimiento" required>
+  
+        <input type="submit" value="Reservar">
+      </form>
+    </div>
+    
+  </body>
+</html>
